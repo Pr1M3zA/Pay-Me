@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tarjetas</title>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link rel="stylesheet" href="cards.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    </head>
+    
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="container-header"></div>
+
+            <img src="../pm2.png" alt="pm" class="img-pm">
+
+            <div class="menu"> 
+            <p><a href="../inicio/inicio.html" class="noline">Inicio</a></p>
+
+                <p > <a href="../movements/movements.html" class="noline">Movimientos</a> </p>
+                <p><a href="../transfer/transfer.html" class="noline">Transferencias</a></p>
+                <p class="active"  style="color: #00085A;"> <strong> Tarjetas</strong> </p>
+                <p><a href="../payments/payments.html" class="noline">Realizar pagos</a></p>
+                <p>Cerrar Sesión</p>
+            </div>
+            
+
+            
+
+        </div>
+        
+        <h1 class="title">Agregar tarjeta</h1>
+        <div class="left">
+                <h2>Tipo</h2>
+                <select class="border" id="card_type">
+                </select>
+
+            <div class="input-control">
+                <h2 for="card">Numero de tarjeta</h2>
+                <input type="text" id="card" placeholder="0000 0000 0000 0000" class="border" maxlength="19" oninput="formatCardNumber(this)">
+                <div class="error" id="card-error"></div>
+            </div>
+
+            <div class="input-control">
+                <h2 for="expiration-date">Fecha de vencimiento</h2>
+                <input type="text" id="expiration-date" placeholder="mm/aa" class="border" maxlength="5" oninput="formatExpiryDate(this)">
+                <div class="error" id="expiration-error"></div>
+            </div>
+            
+            
+        </div>
+        
+        <div class="right" >
+
+            <div class="input-control">
+                <h2 for="cvv">CVV</h2>
+                <input type="text" id="cvv" placeholder="000" class="border" maxlength="3" oninput="formatCVV(this)">
+                <div class="error" id="cvv-error"></div>
+            </div>
+
+                <h2 for="balance">Saldo</h2>
+                <input type="text" id="balance" placeholder="$0.00" class="border" maxlength="15" oninput="formatCurrency(this)">
+            
+            <button class="accept-button" id="addCard">Agregar</button>
+        </div>
+        
+    </div>
+    <script src="cards.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

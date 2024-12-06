@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="container-header" id="headerContainer"></div>
+
+            <img src="../pm2.png" alt="pm" class="img-pm" id="logoImage">
+
+            <div class="menu" id="menu"> 
+                <p class="active" id="inicio" style="color: #00085A;"> <strong> Inicio</strong> </p>
+
+                <p> <a href="../movements/movements.html" class="noline" id="movementsLink">Movimientos</a> </p>
+                <p><a href="../transfer/transfer.html" class="noline" id="transferLink">Transferencias</a></p>
+                <p><a href="../cards/cards.html" class="noline" id="cardsLink">Tarjetas</a></p>
+                <p><a href="../payments/payments.html" class="noline" id="paymentsLink">Realizar pagos</a></p>
+            </div>
+        </div>
+
+        <!-- <div id="leftPanel">
+            <p class="saludo" id="welcome"> </p> -->
+
+        <div id="leftPanel" class="left">
+            <p class="saludo" id="saludo"></p>
+
+            <div id="cardContainer"  class="container-card">
+                 
+
+        
+                <div class="card" id="cards">
+                    <!-- <div class="separar"> 
+                        <p class="cuenta" id="accountLabel">Cuenta</p>
+                        <p class="numero-cuenta" id="accountNumber">---  </p>
+                    </div>
+
+                    <p class="saldo-cuenta" id="balanceLabel">Saldo actual</p>
+                    <p class="saldo" id="currentBalance"></p>  -->
+                </div>
+              
+                
+
+            </div>
+
+        </div>
+
+        <div class="right">
+            <div class="conteinerh">
+            <p class="historial" > Historial</p>
+            </div>
+
+                    <table class="table"> 
+
+                        <thead class="encabezado">
+
+                            <th>Tipo</th>
+                            <th>Fecha</th>
+                            <th>Mi cuenta</th>
+                            <th>Monto</th>
+                            <th>Concepto</th>
+                        </thead>
+
+                        <tbody id="movements">
+
+                            <tr id="transaction4">
+                                <td id="type4"></td>
+                                <td id="account4"></td>
+                                <td id="destination4"></td>
+                                <td id="concept4"></td>
+                            </tr> 
+                        </tbody>
+
+                    </table>
+             
+
+        </div>
+        
+    </div>
+
+     <script src="inicio.js"></script>
+</body>
+</html>

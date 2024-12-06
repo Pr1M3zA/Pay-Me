@@ -1,0 +1,134 @@
+body {
+    background-color: #00085A;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.conteiner {
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.signup {
+    background-color: #00085A;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    height: 45px;
+    width: 130px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.buttons {
+    width: 310px;
+    height: 45px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login {
+    text-decoration: underline;
+    background-color: #ffffff;
+    color: #00085A;
+    border-radius: 30px;
+    border: 3px solid #ffffff;
+    height: 45px;
+    width: 130px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.conteiner-text {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    text-align: right;
+    top: 200px;
+}
+
+.text {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: right;
+    margin: 0;
+}
+
+.cursiva-bold {
+    font-weight: 850;
+    font-family: 'Inter', sans-serif;
+    color: #00085A;
+}
+
+@media (max-width: 1200px) {
+    .text {
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-size: 70px;
+        text-align: right;
+        margin: 0;
+    }
+
+    .conteiner-text {
+        bottom: 80px;
+        right: 30px;
+        top: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .conteiner {
+        width: 90%;
+    }
+
+    .buttons {
+        top: 20px;
+        right: 20px;
+    }
+
+    .signup, .login {
+        font-size: 18px;
+    }
+
+    .text {
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-size: 73px;
+        text-align: right;
+        margin: 0;
+    }
+
+    .conteiner-text {
+        bottom: 60px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .text {
+        font-size: 42px; 
+        line-height: 1.2; /
+    }
+
+    .conteiner-text {
+        right: 10px; 
+        bottom: 40px;
+
+      
+    }
+}

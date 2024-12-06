@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movimientos</title>
+        <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="movements.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+    </head>
+    
+<body>
+
+<<<<<<< HEAD
+    <div class="header">
+        <div class="container-header"></div>
+
+        <img src="../pm2.png" alt="pm" class="img-pm">
+
+        <div class="menu"> 
+            
+            <p > <a href="../inicio/inicio.html" class="noline">Inicio</a> </p>
+            <p class="active"  style="color: #00085A;"> <strong> Movimientos</strong> </p>
+            <p><a href="../transfer/transfer.html" class="noline">Transferencias</a></p>
+            <p><a href="../cards/cards.html" class="noline">Tarjetas</a></p>
+            <p><a href="../payments/payments.html" class="noline">Realizar pagos</a></p>
+        </div>
+=======
+    <div class="menu">
+        <h2><a href="../inicio/inicio.html">Inicio</a></h2>
+        <h2><a href="../movements/movements.html">Movimientos</a></h2>
+        <h2><a href="../transfer/transfer.html">Transferencias</a></h2>
+        <h2><a href="../cards/cards.html">Tarjetas</a></h2>
+        <h2><a href="../payments/payments.html">Realizar pagos</a></h2>
+        <h2 class="log-out">Cerrar Sesión</h2>
+        <div class="blue_line"></div>
+>>>>>>> cb243daaf15edf03f3caf0ba1e9a173b892dbe97
+    </div>
+
+    <div class="filter-rectangle">
+        <div class="filter">
+            <div class="date">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Fecha
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><input type="date" title="date" id="date" onblur="set_selected_date()"></li>
+                    </ul>
+                  </div>
+                  <span id="selected_date"></span>
+            </div>
+
+            <div class="type">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tipo
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" onblur="set_selected_type(event)">Transferencia</a></li>
+                        <li><a class="dropdown-item" href="#" onblur="set_selected_type(event)">Pago</a></li>
+                    </ul>
+                </div>
+                <span id="selected_type"></span>
+            </div>
+            
+            
+
+            <div class="filter-button">
+                <button onclick="get_movements()">Filtrar</button>
+            </div>
+        </div>
+    </div>
+
+    <table  class="movements-table">
+        <thead>
+            <th>Movimiento</th>
+            <th>Fecha</th>
+            <th>Tarjeta</th>
+            <th>Monto</th>
+            <th>Concepto</th>
+        </thead>
+        <tbody id="movements">
+
+        </tbody>
+
+    </table>
+    </div>
+
+    <script src="movements.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
