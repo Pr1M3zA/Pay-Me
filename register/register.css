@@ -6,7 +6,19 @@ body {
     justify-content: flex-end; 
 }
 
-.conteiner {
+.logo{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 50%;
+    height: auto;
+}
+
+.container {
     width: 60%; 
     height: 100vh;
     background-color: white; 
@@ -112,7 +124,7 @@ body {
 
 /* Ajustes para pantallas medianas BIEN*/
  @media (max-width: 1024px) {
-    .conteiner {
+    .container {
         width: 60%;
         height: 100vh;
     }
@@ -128,27 +140,18 @@ body {
         width: 120px;
         font-size: 18px;
     }
-/* .borde{
-    width: 95%;
-    height: 30px;
-
-} */
-.sign_up {
-
-    margin-top: -30px;  /*ñ */
-  
+    .sign_up {
+        margin-top: -30px;  /*ñ */
+    }
 }
- }
 
 @media (max-width: 568px) {
     body {
         display: flex;
         flex-direction: column;
-        align-items: stretch; 
-        
+        align-items: stretch;         
     }
 
-    
     .sign_up {
         width: 100%;
         height: 33%; 
@@ -163,9 +166,8 @@ body {
     }
 
     
-    .conteiner {
-        width: 70%;
-        
+    .container {
+        width: 100%;
         height: 100vh;
         background-color: white;
         display: flex;
@@ -173,8 +175,6 @@ body {
         justify-content: center;
         align-items: center;
         margin-top: 0px;
-
-        /* margin-top: -10px; */
     }
 
     .inputs {

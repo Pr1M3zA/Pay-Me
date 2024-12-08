@@ -8,32 +8,31 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     </head>
     
-<body>
-    <div class="container">
-       
+    <body>
+        <div class="logo"><img src="../pm2.svg" alt=""></div>
+        <div class="container">
+            <div>
+                <h1 class="log">Log in</h1>
+            </div>
 
-        <div>
-            <h1 class="log">Log in</h1>
-        </div>
+            <div class="inputs"> 
+                <input type="text" id="email" placeholder="Correo electrónico  " class="borde">
+                <input type="password" id="password" placeholder="Contraseña" class="borde">
+                <div class="checkbox">
+                    <input type="checkbox" id="remember" class="cbox"> 
+                    <label class="label_box"  for="remember">Recordar contraseña</label>
+                </div>
+            </div> 
 
-        <div class="inputs"> 
-            <input type="text" id="email" placeholder="Correo electrónico  " class="borde">
-            <input type="password" id="password" placeholder="Contraseña" class="borde">
-            <div class="checkbox">
-                <input type="checkbox" id="remember" class="cbox"> 
-                <label class="label_box"  for="remember">Recordar contraseña</label>
+            <div class="buttons"> 
+                <button class="cancel" id="cancel" >Cancelar</button>
+                <button class="login" id="login">Iniciar</button>
+            </div> 
+            <div>
+                <p class="error" id="error"></p>
             </div>
         </div> 
-
-        <div class="buttons"> 
-            <button class="cancel" id="cancel" >Cancelar</button>
-            <button class="login" id="login">Iniciar</button>
-        </div> 
-        <div>
-            <p class="error" id="error"></p>
-        </div>
-    </div> 
-    <script src="login.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</body>
+        <script src="login.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
 </html>
