@@ -14,7 +14,7 @@ body, html {
         "title title"
         "left right";
     height: 100vh;
-    row-gap: 20px;
+    row-gap: 40px;
 }
 
 
@@ -117,7 +117,7 @@ input{
     margin: 10px 0;
     padding: 10px;
     width: 80%;
-    height: 25px;
+    height: 45px;
 }
 
 h2{
@@ -222,7 +222,7 @@ select{
     }
 
     .header {
-        font-size: 18px;
+        font-size: 12px;
         gap: 15px; 
     
     }
