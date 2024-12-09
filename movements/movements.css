@@ -28,7 +28,7 @@ body, html {
     font-size: 20px;
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 /* Menu */
@@ -56,6 +56,16 @@ body, html {
     padding-bottom: 10px;
 }
 
+.active img {
+    visibility: hidden;
+}
+
+.icons img {
+    height: 30px;
+    width: auto;
+    visibility: hidden;
+    
+}
 .active::after {
     content: "";
     position: absolute;
@@ -248,7 +258,7 @@ h2{
 }
 
 
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
     .container {
         grid-template-rows: auto;
         grid-template-areas:
@@ -257,11 +267,27 @@ h2{
             "movements-table";
     }
 
+    .header {
+        font-size: 8px;
+        gap: 10px;      
+    }
 
     .header {
-        font-size: 18px;
-        gap: 15px;      
+        font-size: 8px;
+        gap: 10px;      
     }
+    /*    
+    .active, .noline, .logOut {
+        visibility: hidden;
+        cursor: not-allowed;
+        pointer-events: none;
+        display: none;        
+    }
+
+    .icons img {
+        visibility: visible;
+    }
+    */
 
 }
 
@@ -293,4 +319,3 @@ h2{
             "movements-table";
     }
 }
-}*/

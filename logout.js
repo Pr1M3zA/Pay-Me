@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
     const logoutButton = document.getElementById('logout');
     if (logoutButton) {
         logoutButton.addEventListener('click', () => {
@@ -7,4 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+*/
 
+sessionStorage.removeItem("token");  
+window.location.href = '../home_page/home_page.html';
