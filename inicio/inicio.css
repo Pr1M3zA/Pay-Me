@@ -117,10 +117,8 @@ table {
     font-size: 20px;
     font-family: 'Josefin Sans', sans-serif;
     margin: 0 auto;
-    height:60%;
-     overflow-y: auto; 
-    scrollbar-width: none; 
-    
+    overflow-y: auto; 
+    scrollbar-width: none;    
     margin-top: 4%; 
 }
 

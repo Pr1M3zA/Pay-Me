@@ -75,6 +75,8 @@ function formatExpiryDate(input) {
     if (value.length > 2) {
         let month = value.slice(0, 2);
         let year = value.slice(2, 4);
+        if(month == '00')
+            month = '01'
         if (parseInt(month, 10) > 12) 
             month = '12';
         input.value = month + '/' + year;
