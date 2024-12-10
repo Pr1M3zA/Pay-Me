@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }).then((result) => {
                 if (result.isConfirmed) {
                     sessionStorage.removeItem("token");
+                    localStorage.removeItem("token");
                     window.location.href = '../home_page/home_page.html';
                 }
             });

@@ -34,6 +34,9 @@ document.getElementById('login').addEventListener('click', async (event) => {
 
         sessionStorage.setItem('token', token.data);
 
+        if(document.getElementById("remember").value)
+            localStorage.setItem('token', token.data);
+
         await Swal.fire({
             icon: 'success',
             title: 'Inicio de sesión exitoso',
